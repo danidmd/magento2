@@ -1,5 +1,7 @@
 Dmd_CheapestProducts module calculate the top cheapest products from a category.
 
+To see the result of the module, go to http://magento2.local/dmdcheapestproducts/index/display
+
 NOTE:
 As I did not know the user level, the module can be configured in 2 different ways.
 1-  The user can define the category through the backend of Magento.
