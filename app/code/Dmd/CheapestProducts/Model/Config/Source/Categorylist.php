@@ -72,7 +72,7 @@ class Categorylist implements \Magento\Framework\Option\ArrayInterface
      *
      * @return array
      */
-    public function getCategories()
+    protected function getCategories()
     {
         $categories = $this->_categoryHelper->getStoreCategories(true,false,true);
         foreach($categories as $category)
@@ -91,7 +91,7 @@ class Categorylist implements \Magento\Framework\Option\ArrayInterface
      * @param \Magento\Framework\Data\Tree\Node $category
      * @return void
      */
-    public function getSubcategories($category)
+    protected function getSubcategories($category)
     {
         $categoryObj = $this->_categoryRepository->get($category->getId());
 

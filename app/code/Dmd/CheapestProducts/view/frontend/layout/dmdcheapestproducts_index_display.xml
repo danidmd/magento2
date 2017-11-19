@@ -11,9 +11,11 @@
 	<body>
 		<referenceContainer name="content">
 			<block class="Dmd\CheapestProducts\Block\Productlist" name="product-list" template="cheapest_products.phtml">
+				<!--
 				<arguments>
 					<argument name="category_id" xsi:type="number">22</argument>
 				</arguments>
+				-->
 			</block>
 		</referenceContainer>
 	</body>
