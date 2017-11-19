@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @author Daniel Martinez <dani.dmd86@gmail.com>
+ *
+ * @package Dmd
+ * @version 1
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="dmdcheapestproducts" frontName="dmdcheapestproducts">
+            <module name="Dmd_CheapestProducts" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

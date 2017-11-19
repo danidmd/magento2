@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @author Daniel Martinez <dani.dmd86@gmail.com>
+ *
+ * @package Dmd
+ * @version 1
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+		<tab id="dmd" translate="label" sortOrder="10">
+            <label>DMD</label>
+        </tab>
+		<section id="dmdcheapestproducts" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Cheapest Products</label>
+            <tab>dmd</tab>
+            <resource>Dmd_CheapestProducts::system_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Settings</label>
+                <field id="category_id" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Id</label>
+                    <source_model>Dmd\CheapestProducts\Model\Config\Source\Categorylist</source_model>
+                    <comment>Category of the cheapest products</comment>
+                </field>
+                <field id="number_of_products" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Number of products to show</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
